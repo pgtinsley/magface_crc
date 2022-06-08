@@ -1,0 +1,36 @@
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2022 NVIDIA Corporation
+Built on Thu_Feb_10_18:23:41_PST_2022
+Cuda compilation tools, release 11.6, V11.6.112
+Build cuda_11.6.r11.6/compiler.30978841_0
+# conda environments:
+#
+base                     /afs/crc.nd.edu/user/p/ptinsley/miniconda3
+magface               *  /afs/crc.nd.edu/user/p/ptinsley/miniconda3/envs/magface
+retinaface               /afs/crc.nd.edu/user/p/ptinsley/miniconda3/envs/retinaface
+sg2ada                   /afs/crc.nd.edu/user/p/ptinsley/miniconda3/envs/sg2ada
+stylegan3                /afs/crc.nd.edu/user/p/ptinsley/miniconda3/envs/stylegan3
+
+[32m=> parse the args ...[0m
+[32m=> parse the args ...[0m
+{'arch': 'iresnet100',
+ 'batch_size': 256,
+ 'cpu_mode': False,
+ 'dist': 1,
+ 'embedding_size': 512,
+ 'feat_list': './MPIE_chips/feat.list',
+ 'inf_list': './MPIE_chips/img.list',
+ 'print_freq': 100,
+ 'resume': '/afs/crc.nd.edu/user/p/ptinsley/magface/magface_epoch_00025.pth',
+ 'workers': 4}
+[32m=> torch version : 1.11.0[0m
+[32m=> ngpus : 1[0m
+[32m=> modeling the network ...[0m
+=> loading pth from /afs/crc.nd.edu/user/p/ptinsley/magface/magface_epoch_00025.pth ...[0m
+[32m=> building the dataloader ...[0m
+=> preparing dataset for inference ...[0m
+[32m=> starting inference engine ...[0m
+=> embedding features will be saved into ./MPIE_chips/feat.list[0m
+2022-06-08 01:02:32.312 | INFO     | utils.utils:display:55 - Extract Features: [  0/294]	Time  4.028 ( 4.028)	Data  2.763 ( 2.763)
+2022-06-08 01:04:16.459 | INFO     | utils.utils:display:55 - Extract Features: [100/294]	Time  1.071 ( 1.071)	Data  0.158 ( 0.193)
+2022-06-08 01:06:05.089 | INFO     | utils.utils:display:55 - Extract Features: [200/294]	Time  1.090 ( 1.079)	Data  0.175 ( 0.181)
